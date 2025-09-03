@@ -6,7 +6,11 @@ export default function Button({ text, color }) {
       <button
         type="button"
 
-        style={{ padding: "10px", backgroundColor: color, border:"none", borderRadius:"30px" }}
+        style={{ 
+            padding: "10px",
+             backgroundColor: color, 
+             border:"none",
+              borderRadius:"30px" }}
       >
         {text}
       </button>

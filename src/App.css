@@ -35,7 +35,7 @@ body,
 .text-section {
   flex: 1;
   min-width: 0; /* allow shrinking */
-  margin-left: 2%;
+  margin-left: 5%;
   align-items: flex-start;
 }
 

@@ -4,6 +4,8 @@ import Header from './component/Header'
 import Section from './component/Section'
 import Images from './component/images';
 import Image2 from './component/image2';
+import WorkflowItems from './component/WorkflowItems';
+import Websection from './component/websection';
 
 
 function App() {
@@ -45,7 +47,7 @@ function App() {
           <Images />
         </div>
 
-        <div className="text-section" style={{marginTop:"5%"}}>
+        <div className="text-section" style={{ marginTop: "5%" }}>
           <Section
             title="Quick Search"
             subtitle="Easily search your snippets by content, category, web address, application, and more"
@@ -71,12 +73,92 @@ function App() {
       <div
         style={{
           marginTop: "5%",
-          display:"flex",
+          display: "flex",
           alignContent: "center",
           justifyContent: "center",
-        }}>
+        }}
+      >
         <Image2 />
       </div>
+
+      <div>
+        <Section
+          title="Supercharge your workflow"
+          subtitle="We've got your tools to boost your productivity "
+        />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "10%",
+          gap: "1rem",
+        }}
+      >
+        <div style={{}}>
+          <WorkflowItems
+            image="../src/assets/icon-blacklist.svg"
+            title="Create blacklists"
+            subtitle="Ensure sensitive information never makes its way to your clipboard."
+          />
+        </div>
+
+        <div>
+          <WorkflowItems
+            image="../src/assets/icon-text.svg"
+            title="Plain text snippets"
+            subtitle="Remove unwanted formatting for a consistent look."
+          />
+        </div>
+
+        <div>
+          <WorkflowItems
+            image="../src/assets/icon-preview.svg"
+            title="Sneak preview"
+            subtitle="Quick preview of all snippets for easy access."
+          />
+        </div>
+      </div>
+
+      
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "10%",
+            gap: "3rem",
+          }}
+        >
+            <Websection icon="../src/assets/logo-google.png" />
+            <Websection icon="../src/assets/logo-ibm.png" />
+            <Websection icon="../src/assets/logo-microsoft.png" />
+            <Websection icon="../src/assets/logo-hp.png" />
+          
+        </div>
+
+        <div style={{ marginTop: "5%" }}>
+        <Section
+          title="Clipboard for iOS and Mac OS "
+          subtitle="Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices."
+        />
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "1rem",
+          marginTop: "1%",
+        }}
+      >
+        <Button text="Download for iOS" color="rgb(37, 187, 164)" />
+        <Button text="Download for Mac" color="rgb(138, 149, 251)" />
+      </div>
+
     </>
   );
 }
