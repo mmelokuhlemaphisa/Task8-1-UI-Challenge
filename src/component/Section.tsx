@@ -1,6 +1,11 @@
 import React from "react";
 
-export function Section({ title, subtitle }) {
+interface SectionProps {
+  title: string;
+  subtitle: string;
+}
+
+export function Section({ title, subtitle }: SectionProps) {
   return (
     <>
       <div
@@ -16,18 +21,18 @@ export function Section({ title, subtitle }) {
   );
 }
 
-export function Section2({ title, subtitle }) {
+export function Section2({ title, subtitle }: SectionProps) {
   return (
     <>
       <div
+        className="section"
         style={{
           display: "flex",
-          flexDirection:"column",
-          alignItems: "start",
-          
+          flexDirection: "column",
         }}
       >
-        <h1>{title}</h1>
+        <h3>{title}</h3>
+
         <p>{subtitle}</p>
       </div>
     </>

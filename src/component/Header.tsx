@@ -7,8 +7,10 @@ export default function Header() {
   return (
 <div className='header' 
 style={{width:"100%", 
-height:"15%", 
+height:"20%", 
 backgroundImage:`url(${headerBg})`,
+backgroundRepeat: "no-repeat",
+
 display:"flex", 
 justifyContent:"center",
 alignItems:"center"

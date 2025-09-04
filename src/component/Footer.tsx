@@ -1,15 +1,13 @@
 import React from 'react'
 import logo from "../assets/logo.svg"
-import facebook from "../assets/icon-facebook.svg"
-import twitter from "../assets/icon-twitter.svg"
-import instagram from "../assets/icon-instagram.svg"
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 export default function Footer() {
   return (
     <div
       style={{
         width: "100%",
-        height: "10vh",
+        height: "20%",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
@@ -19,13 +17,17 @@ export default function Footer() {
       }}
     >
       <img src={logo} alt="" />
+
       <div
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between",
-          gap: "2%",
-          alignContent: "center",
+        //   justifyContent: "space-between",
+          gap: "20%",
+          width:"50%"
+          
+     
+        
         }}
       >
         <div>
@@ -45,9 +47,17 @@ export default function Footer() {
       </div>
 
       <div>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
+        <a href="#">
+          <FaFacebook className="social-icon facebook" />
+        </a>
+
+        <a href="#">
+          <FaTwitter className="social-icon twitter" />
+        </a>
+
+        <a href="#">
+          <FaInstagram className="social-icon instagram" />
+        </a>
       </div>
     </div>
   );

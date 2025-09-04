@@ -1,10 +1,16 @@
 import React from "react";
 
-export default function Button({ text, color }) {
+
+interface ButtonProps {
+  text: string;
+  color: string; 
+}
+
+export default function Button({ text, color }:ButtonProps) {
   return (
-    <>
+    
       <button
-        type="button"
+        type="submit"
 
         style={{ 
             padding: "10px",
@@ -14,6 +20,6 @@ export default function Button({ text, color }) {
       >
         {text}
       </button>
-    </>
+
   );
 }

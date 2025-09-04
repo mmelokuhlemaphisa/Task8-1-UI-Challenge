@@ -45,17 +45,7 @@ function App() {
           <Images />
         </div>
 
-        <div
-          className="text-section"
-          style={{
-            marginTop: "5%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "start",
-            width: "100%",
-            gap: "10px",
-          }}
-        >
+        <div className="text-section">
           <Section2
             title="Quick Search"
             subtitle="Easily search your snippets by content, category, web address, application, and more"
@@ -95,6 +85,7 @@ function App() {
           subtitle="We've got your tools to boost your productivity "
         />
       </div>
+
       <div
         style={{
           display: "flex",
@@ -131,19 +122,21 @@ function App() {
       </div>
 
       <div
+        className="logoSection"
         style={{
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
           marginTop: "10%",
-          gap: "3rem",
+          gap: "3%",
         }}
       >
         <Logosection icon="../src/assets/logo-google.png" />
         <Logosection icon="../src/assets/logo-ibm.png" />
         <Logosection icon="../src/assets/logo-microsoft.png" />
         <Logosection icon="../src/assets/logo-hp.png" />
+        <Logosection icon="../src/assets/logo-vector-graphics.png" />
       </div>
 
       <div style={{ marginTop: "5%" }}>
@@ -166,7 +159,6 @@ function App() {
       </div>
       <div>
         <Footer />
-        
       </div>
     </>
   );

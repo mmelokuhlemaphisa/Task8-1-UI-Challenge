@@ -1,9 +1,13 @@
 import React from 'react'
 
-export default function Logosection({icon}) {
+interface LogoProp {
+  icon: string;
+}
+
+export default function Logosection({ icon }: LogoProp) {
   return (
     <div>
       <img src={icon} alt="" />
     </div>
-  )
+  );
 }

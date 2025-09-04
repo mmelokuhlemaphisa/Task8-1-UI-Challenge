@@ -1,10 +1,22 @@
 import React from 'react'
 
-export default function WorkflowItems({image, title, subtitle}) {
+interface WorkflowProps {
+  image :string;
+  title: string;
+  subtitle: string;
+}
+
+export default function WorkflowItems({ image, title, subtitle }: WorkflowProps) {
   return (
     <div>
-      <img src={image} />
-      <h2>{title}</h2>
+      <div style={{ justifyContent: "center", textAlign: "center" }}>
+        <img src={image} />
+      </div>
+
+      <div style={{ justifyContent: "center", textAlign: "center" }}>
+        <h3>{title}</h3>
+      </div>
+
       <p>{subtitle}</p>
     </div>
   );
