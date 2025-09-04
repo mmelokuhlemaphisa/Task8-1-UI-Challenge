@@ -165,7 +165,7 @@ function App() {
         <Button text="Download for Mac" color="rgb(138, 149, 251)" />
       </div>
       <div>
-        <Footer image="../assets/logo.svg" />
+        <Footer />
         
       </div>
     </>
