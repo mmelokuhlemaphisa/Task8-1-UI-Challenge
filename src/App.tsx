@@ -11,11 +11,11 @@ import Footer from "./component/Footer";
 function App() {
   return (
     <>
-      <div>
+      <div style={{width:"100%"}}>
         <Header />
       </div>
 
-      <div style={{ marginTop: "3%" }}>
+      <div style={{ marginTop: "5%" }}>
         <Section
           title="A History Of Everything You Copy"
           subtitle="Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices."
@@ -27,7 +27,7 @@ function App() {
           display: "flex",
           justifyContent: "center",
           gap: "1rem",
-          marginTop: "1%",
+          marginTop: "5%",
         }}
       >
         <Button text="Download for iOS" color="rgb(37, 187, 164)" />
@@ -61,7 +61,7 @@ function App() {
         </div>
       </div>
 
-      <div style={{ marginTop: "10%" }}>
+      <div style={{ marginTop: "5%" }}>
         <Section
           title="Access Clipboard Anywhere"
           subtitle="Whether you're on the go, or in your computer, you can access all your clipboard snippet in a few in a few simple clicks  "
@@ -92,7 +92,7 @@ function App() {
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "10%",
+          marginTop: "5%",
           gap: "1rem",
         }}
       >
@@ -128,7 +128,7 @@ function App() {
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "10%",
+          marginTop: "5%",
           gap: "3%",
         }}
       >
@@ -151,7 +151,7 @@ function App() {
           display: "flex",
           justifyContent: "center",
           gap: "1rem",
-          marginTop: "1%",
+          marginTop: "5%",
         }}
       >
         <Button text="Download for iOS" color="rgb(37, 187, 164)" />
