@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Websection({icon}) {
+export default function Logosection({icon}) {
   return (
     <div>
       <img src={icon} alt="" />

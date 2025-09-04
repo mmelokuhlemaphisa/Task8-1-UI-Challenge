@@ -1,16 +1,14 @@
-import './App.css'
-import Button from './component/button';
-import Header from './component/Header'
-import Section from './component/Section'
-import Images from './component/images';
-import Image2 from './component/image2';
-import WorkflowItems from './component/WorkflowItems';
-import Websection from './component/websection';
-
+import "./App.css";
+import Button from "./component/Button";
+import Header from "./component/Header";
+import { Section2, Section } from "./component/Section";
+import Images from "./component/Images";
+import Image2 from "./component/Image2";
+import WorkflowItems from "./component/Workflowitems";
+import Logosection from "./component/Logosection";
+import Footer from "./component/Footer";
 
 function App() {
-
-
   return (
     <>
       <div>
@@ -47,16 +45,26 @@ function App() {
           <Images />
         </div>
 
-        <div className="text-section" style={{ marginTop: "5%" }}>
-          <Section
+        <div
+          className="text-section"
+          style={{
+            marginTop: "5%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "start",
+            width: "100%",
+            gap: "10px",
+          }}
+        >
+          <Section2
             title="Quick Search"
             subtitle="Easily search your snippets by content, category, web address, application, and more"
           />
-          <Section
+          <Section2
             title="iCloud Sync"
             subtitle="Instantly saves and syncs snippets across all your devices."
           />
-          <Section
+          <Section2
             title="Complete History"
             subtitle="Retrieve snippets from the first moment you started using the app."
           />
@@ -122,25 +130,23 @@ function App() {
         </div>
       </div>
 
-      
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "10%",
-            gap: "3rem",
-          }}
-        >
-            <Websection icon="../src/assets/logo-google.png" />
-            <Websection icon="../src/assets/logo-ibm.png" />
-            <Websection icon="../src/assets/logo-microsoft.png" />
-            <Websection icon="../src/assets/logo-hp.png" />
-          
-        </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "10%",
+          gap: "3rem",
+        }}
+      >
+        <Logosection icon="../src/assets/logo-google.png" />
+        <Logosection icon="../src/assets/logo-ibm.png" />
+        <Logosection icon="../src/assets/logo-microsoft.png" />
+        <Logosection icon="../src/assets/logo-hp.png" />
+      </div>
 
-        <div style={{ marginTop: "5%" }}>
+      <div style={{ marginTop: "5%" }}>
         <Section
           title="Clipboard for iOS and Mac OS "
           subtitle="Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices."
@@ -158,9 +164,12 @@ function App() {
         <Button text="Download for iOS" color="rgb(37, 187, 164)" />
         <Button text="Download for Mac" color="rgb(138, 149, 251)" />
       </div>
-
+      <div>
+        <Footer image="../assets/logo.svg" />
+        
+      </div>
     </>
   );
 }
 
-export default App
+export default App;

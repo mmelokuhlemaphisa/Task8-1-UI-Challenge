@@ -9,9 +9,9 @@ export default function Header() {
 style={{width:"100%", 
 height:"15%", 
 backgroundImage:`url(${headerBg})`,
- display:"flex", 
- justifyContent:"center",
- alignItems:"center"
+display:"flex", 
+justifyContent:"center",
+alignItems:"center"
  }}>
   
 <img src={logo} alt="logo" />
