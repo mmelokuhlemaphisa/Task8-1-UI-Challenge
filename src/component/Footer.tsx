@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div>
+      <div className='socialLink'>
         <a href="#">
           <FaFacebook className="social-icon facebook" />
         </a>

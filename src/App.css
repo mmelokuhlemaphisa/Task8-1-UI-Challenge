@@ -44,6 +44,26 @@ body,
   margin-bottom: 0.7rem;
 }
 
+
+a,
+p {
+  text-decoration: aqua;
+  color: black;
+}
+
+p {
+  color: lightgray;
+}
+
+h1,
+h2,
+h3 {
+  color: #4b5156;
+}
+
+
+
+
 /* On smaller screens, stack them */
 @media (max-width: 768px) {
   html {
@@ -76,20 +96,9 @@ body,
     margin-top: 2rem;
     flex-direction:column ;
   }
+
+  .header{
+    width: 100%;
+  }
 }
 
-a,
-p {
-  text-decoration: aqua;
-  color: black;
-}
-
-p {
-  color: lightgray;
-}
-
-h1,
-h2,
-h3 {
-  color: #4b5156;
-}
