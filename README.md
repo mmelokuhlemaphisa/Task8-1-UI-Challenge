@@ -60,5 +60,8 @@ The project was inspired by a design layout and rebuilt into reusable React comp
 3. Past the repository URL (https://github.com/your-username/Task8-1-UI-challenge.git) then press enter.
 4. Choose a local folder where you want to save project.
 5. Click Open.
+6. Use Terminal to install npm and run dev
+   * npm install
+  * npm run dev
 
 
