@@ -33,8 +33,10 @@ The project was inspired by a design layout and rebuilt into reusable React comp
 
 * npx create vite@latest 
 * Project name Task8-1-UI-challenge
-* cd clipboard-landing-page
+* cd Task8-1-UI-challenge
 * npm start
+* npm install
+* npm run dev
 
 
 # Created Components
