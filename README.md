@@ -31,10 +31,9 @@ The project was inspired by a design layout and rebuilt into reusable React comp
 
 1. Set up React Project
 
-* npx create vite@latest 
+* npm create vite@latest 
 * Project name Task8-1-UI-challenge
 * cd Task8-1-UI-challenge
-* npm start
 * npm install
 * npm run dev
 
